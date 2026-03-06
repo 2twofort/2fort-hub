@@ -1,6 +1,7 @@
-# GameVault
+# 2Fort Hub
 
-Static gaming site for GitHub Pages. **You only ever edit one file: `config.js`.**
+Welcome to 2Fort Hub! A fully static and easily deployable website on which you can build HTML games to access and play at any time. 
+AI was heavily used in this project as I'm not a coder, but the idea is mine. So, haha. 
 
 ---
 
