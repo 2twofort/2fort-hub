@@ -1,8 +1,9 @@
 # 2Fort Hub 🎮
 
 2Fort Hub is a fully static gaming website you can deploy pretty much anywhere. Built for the 2Fort Google Website project as the main site to play games on. Evergreen Public Schools students are more than welcome to become a part of the 2Fort project!
+Oh, and by the way, **AI was heavily included in this project as I'm not anywhere near a coder,** but the idea is mine. 
 
-**Join the community → https://discord.gg/Q5c3cxyDDF**
+**Join the community today → https://discord.gg/Q5c3cxyDDF**
 
 ---
 
