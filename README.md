@@ -1,7 +1,7 @@
 # 2Fort Hub
 
 Welcome to 2Fort Hub! A fully static and easily deployable website on which you can build HTML games to access and play at any time. 
-AI was heavily used in this project as I'm not a coder, but the idea is mine. So, haha. 
+**AI was heavily used in this project as I'm not a coder**, but the idea is mine. So feel free to bully me or something, haha.
 
 ---
 
