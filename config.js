@@ -8,7 +8,7 @@
 const CONFIG = {
 
   // ── Site settings ────────────────────────────────────────
-  siteName: 'GameVault',
+  siteName: '2Fort Hub',
 
   // How games open:
   //   'aboutblank' → opens in about:blank (hides the URL) ← recommended

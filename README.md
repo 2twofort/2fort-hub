@@ -1,114 +1,45 @@
-# 2Fort Hub
+# 2Fort Hub 🎮
 
-Welcome to 2Fort Hub! A fully static and easily deployable website on which you can build HTML games to access and play at any time. 
-**AI was heavily used in this project as I'm not a coder**, but the idea is mine. So feel free to bully me or something, haha.
+2Fort Hub is a fully static gaming website you can deploy pretty much anywhere. Built for the 2Fort Google Website project as the main site to play games on. Evergreen Public Schools students are more than welcome to become a part of the 2Fort project!
 
----
-
-## Folder Structure
-
-```
-gamevault/
-├── index.html       ← Never touch this
-├── config.js        ← Only file you edit
-├── assets/
-│   └── logo.png
-├── games/
-│   ├── snake.html           ← single-file game
-│   ├── tetris/
-│   │   └── index.html       ← multi-file game
-│   └── geometry-dash/
-│       ├── index.html
-│       └── assets/...
-└── apps/
-    └── calculator.html
-```
+**Join the community → https://discord.gg/Q5c3cxyDDF**
 
 ---
 
-## Adding a Game
+## Getting Started
 
-1. **Drop the game file(s)** into `games/`
-   - Single file → `games/mygame.html`
-   - Multi-file → `games/mygame/index.html` (with its own assets folder)
-
-2. **Open `config.js`** and add one block inside `games > items`:
-
-```js
-{
-  title:    'My Game',
-  category: 'arcade',           // shows as a filter pill
-  file:     'games/mygame.html',// path from repo root
-  emoji:    '🎮',               // shown if no thumbnail
-  color:    '#1a3d1a',          // card background tint
-},
-```
-
-With a thumbnail:
-```js
-{
-  title:    'My Game',
-  category: 'action',
-  file:     'games/mygame/index.html',
-  emoji:    '🎯',
-  color:    '#1a1a3d',
-  thumb:    'assets/thumbs/mygame.png',  // 16:9 image
-},
-```
-
-3. Push to GitHub. Done.
+Download the latest release, extract it, and upload the contents to your GitHub repo. Enable GitHub Pages in your repo settings and you're live. That's it.
 
 ---
 
-## Adding a Tab (e.g. Emulators)
+## Adding Games
 
-In `config.js`:
+Drop your game file into the `games/` folder, then open `config.js` and add it to the list. The site picks it up automatically — no other files need to be touched.
 
-```js
-// 1. Add the tab button
-tabs: [
-  { id: 'games',     label: 'Games'     },
-  { id: 'apps',      label: 'Apps'      },
-  { id: 'emulators', label: 'Emulators' }, // ← add this
-],
-
-// 2. Add the matching section
-sections: {
-  // ...existing sections...
-  emulators: {
-    subtitle: 'Classic consoles in your browser.',
-    items: [
-      {
-        title:    'GBA',
-        category: 'nintendo',
-        file:     'emulators/gba.html',
-        emoji:    '🕹️',
-        color:    '#3d1a2b',
-      },
-    ],
-  },
-},
-```
+If your game is a single file, just place it directly in `games/`. If it comes with its own folder and assets, drop the whole folder in.
 
 ---
 
-## Deploy to GitHub Pages
+## Adding New Tabs
 
-1. Create a GitHub repo
-2. Upload all files (keep the folder structure)
-3. Go to **Settings → Pages → Source** → `main` branch, `/ (root)`
-4. Site goes live at `https://yourusername.github.io/repo-name`
-
-> Name the repo `yourusername.github.io` to get a clean root URL.
+Want a section for Apps, Emulators, or anything else? Open `config.js`, add a tab and a matching section, and it'll show up in the navigation bar right away.
 
 ---
 
-## Open Mode
+## Open Modes
 
-Change how games open in `config.js`:
+You can control how games launch by changing one line in `config.js`:
 
-```js
-openMode: 'aboutblank',  // opens in about:blank (hides URL) ← default
-openMode: 'newtab',      // opens directly in a new tab
-openMode: 'modal',       // fullscreen overlay on the page
-```
+- **about:blank** — hides the URL bar, feels clean and native *(default)*
+- **New tab** — opens the game directly in a new tab
+- **Modal** — plays the game in a fullscreen overlay without leaving the page
+
+---
+
+## Deploying
+
+Works on GitHub Pages, Netlify, Vercel, Cloudflare Pages — anywhere that serves static files. Just make sure `index.html` is at the root of your deployment.
+
+---
+
+*Made with ♥ for the 2Fort project.*
