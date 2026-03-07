@@ -40,7 +40,7 @@ const CONFIG = {
       file:     'games/basket-bros.html',
       emoji:    '🏀',
       color:    '#1a3d1a',
-      thumb:    'assets/thumbs/basket-bros.png",
+      thumb:    'assets/thumbs/basket-bros.png',
     },
     {
       title:    'Snake',
