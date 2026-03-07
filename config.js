@@ -32,20 +32,32 @@ const CONFIG = {
 
     // ── GAMES ───────────────────────────────────────────────
     games: {
-      subtitle: 'Click any game to launch.',
-      items: [
-
-        {
-  title:    'Basket Bros',
-  category: 'arcade',
-  file:     'games/basket-bros.html',
-  emoji:    '🏀',
-  color:    '#1a3d1a',
-},
-
-      ],
+  subtitle: 'Click any game to launch.',
+  items: [
+    {
+      title:    'Basket Bros',
+      category: 'arcade',
+      file:     'games/basket-bros.html',
+      emoji:    '🏀',
+      color:    '#1a3d1a',
+      thumb:    'assets/thumbs/basket-bros.png",
     },
-
+    {
+      title:    'Snake',
+      category: 'arcade',
+      file:     'games/snake.html',
+      emoji:    '🐍',
+      color:    '#2b3d1a',
+    },
+    {
+      title:    'Tetris',
+      category: 'puzzle',
+      file:     'games/tetris/index.html',
+      emoji:    '🟦',
+      color:    '#1a1a3d',
+    },
+  ],
+},
 
     // ── APPS ────────────────────────────────────────────────
     apps: {
