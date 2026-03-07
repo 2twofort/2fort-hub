@@ -1,5 +1,5 @@
 // ============================================================
-//  GAMEVAULT CONFIG
+//  2FORT-HUB CONFIG
 //  This is the ONLY file you need to edit to add content.
 //  Drop your game HTML files into the games/ folder,
 //  then add an entry here. That's it.
@@ -35,28 +35,13 @@ const CONFIG = {
       subtitle: 'Click any game to launch.',
       items: [
 
-        // HOW TO ADD A GAME:
-        // 1. Put your game file(s) in the games/ folder
-        //    e.g. games/snake/index.html  or  games/tetris.html
-        // 2. Copy one of the blocks below and fill it in.
-        //
-        // Fields:
-        //   title    – display name
-        //   category – used for filter pills (arcade, puzzle, action, strategy…)
-        //   file     – path relative to this repo root  e.g. 'games/snake/index.html'
-        //   emoji    – shown on the card if no thumb image is set
-        //   color    – hex color tint for the card background
-        //   thumb    – (optional) path to a preview image  e.g. 'assets/thumbs/snake.png'
-        //
-        // Example:
-        // {
-        //   title:    'Snake',
-        //   category: 'arcade',
-        //   file:     'games/snake/index.html',
-        //   emoji:    '🐍',
-        //   color:    '#1a3d1a',
-        //   thumb:    'assets/thumbs/snake.png',
-        // },
+        {
+  title:    'Basket Bros',
+  category: 'arcade',
+  file:     'games/basket-bros.html',
+  emoji:    '🏀',
+  color:    '#1a3d1a',
+},
 
       ],
     },
